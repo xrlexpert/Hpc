@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         sleep(2);
         //Spin(2);
         gettimeofday(&finish, NULL);
-         double duration = ((double)(finish.tv_sec-start.tv_sec)*1000000 + (double)(finish.tv_usec-		start.tv_usec)) / 1000000;
+        double duration = ((double)(finish.tv_sec-start.tv_sec)*1000000 + (double)(finish.tv_usec-		start.tv_usec)) / 1000000;
     printf("child:%lf\n",duration);
     } else {
         // parent goes down this path (original process)
